@@ -1,4 +1,4 @@
-*This project is in finnish.
+/*This project is in finnish.
 This is a simple school project where the task was to make a phonebook file that checks if the input information exists in the file, 
 if they´re there they get deleted. Otherwise it outputs that "the person that you´re loking for was not in the file".
 */
