@@ -9,8 +9,8 @@ def main():
     while True:
         choice =input("Foot, Nuke or Cockroach? (Quit ends): ")
         comp = random.randint(1,3)		
-        if choice == "Quit": break
-        if choice == "Foot":
+        if choice == "Quit" or "quit": break
+        if choice == "Foot" or "foot":
             print("You chose:",choice)
             if comp == 1:
                 print("Computer chose: Foot")
@@ -29,7 +29,7 @@ def main():
                 wins += 1
                 played += 1
                 continue
-        elif choice == "Nuke":
+        elif choice == "Nuke" or "nuke":
             print("You chose:",choice)
             if comp == 1:
                 print("Computer chose: Foot")
@@ -47,7 +47,7 @@ def main():
                 print("You lose!")
                 played += 1
                 continue
-        elif choice == "Cockroach":
+        elif choice == "Cockroach" or "cockroach":
             print("You chose:",choice)
             if comp == 1:
                 print("Computer chose: Foot")
