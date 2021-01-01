@@ -46,8 +46,8 @@ class Library:
                     print("\nInvalid input")
                     continue
         self.bookName = input("\nPlease give name for new notebook: ")
-        if not self.bookName.endswith(".txt"):  # Makes sure the filename ends with.txt
-            self.bookName = self.bookName + ".txt"
+        self.bookName = self.endingTester(self.bookName)
+
         self.saver(content)
 
     def saver(self, content):
@@ -67,8 +67,7 @@ class Library:
         else:
             print(listOfBooks)
             newBook = input("\nWhich notebook should we open? ")
-            if not newBook.endswith(".txt"):  # Makes sure the filename ends with.txt
-                newBook = newBook + ".txt"
+            newBook = self.endingTester(newBook)
             if newBook in listOfBooks:
                 self.bookName = newBook
                 print("Opened: ", newBook)
@@ -76,6 +75,15 @@ class Library:
             else:
                 print("Notebook not found.\n")
                 return
+
+    def endingTester(self,Name):
+        """Makes sure the filename ends with.txt"""
+        if not Name.endswith(".txt"):
+            Name = Name + ".txt"
+            return Name
+        else:
+            return Name
+
 
 
 class Notebook:
