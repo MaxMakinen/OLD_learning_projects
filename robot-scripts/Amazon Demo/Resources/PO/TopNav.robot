@@ -7,7 +7,7 @@ Search For Products
     Submit Search
 
 Enter Search Term
-    Input Text  id=twotabsearchtextbox  teddy bear
+    Input Text  id=twotabsearchtextbox  ${SEARCH_TERM}
 
 Submit Search
     [Documentation]  Clicks the search button

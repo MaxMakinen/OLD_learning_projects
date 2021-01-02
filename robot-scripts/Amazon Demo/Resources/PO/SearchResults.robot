@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Verify Search completed
-    Wait Until Page Contains  results for "teddy bear"
+    Wait Until Page Contains  results for "${SEARCH_TERM}"
 
 Click Product Link
     [Documentation]  Clicks on the first product in the search results.
