@@ -54,6 +54,6 @@ while True:
         book = open("notebook.dat", "wb")
         pickle.dump(read, book)
         book.close()
-        print("Notebook shutting down, thank you.")
+        print("notebook shutting down, thank you.")
         
         break
