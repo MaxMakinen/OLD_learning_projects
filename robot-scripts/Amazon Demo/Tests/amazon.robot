@@ -1,11 +1,11 @@
 *** Settings ***
 Documentation  This is some basic info about the whole suite
-Resource  ../Resources/Amazon.robot
+Resource  ../Resources/AmazonApp.robot
 Test Setup  Begin web test
 Test Teardown  End web test
 
 *** Variables ***
-${BROWSER} =  firefox
+${BROWSER} =  ie
 ${START_URL} =  http://www.amazon.com
 ${SEARCH_TERM} =  teddy bear
 

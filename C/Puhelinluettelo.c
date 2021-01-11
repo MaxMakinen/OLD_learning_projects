@@ -1,6 +1,6 @@
 /*
 This is a simple school project where the task was to make a phonebook file that checks if the input information exists in the file, 
-if theyB4re there they get deleted. Otherwise it outputs that "The person that youB4re loking for was not in the file".
+if they're there they get deleted. Otherwise it outputs that "The person that you're loking for was not in the file".
 */
 
 
